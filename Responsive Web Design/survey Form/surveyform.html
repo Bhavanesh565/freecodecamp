@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="surveyform.css" rel="stylesheet" />
+
+  <script>
+    
+    function myFunction() {
+  var x;
+
+  // Get the value of the input field with id="number"
+  x = document.getElementById("number").value;
+
+  // If x is Not a Number or less than one or greater than 50
+  if (isNaN(x) || x < 1 || x > 50) {
+    alert("Age must be 1 to 50");
+  } 
+}
+
+function buttonSubmit(){
+    
+    alert("Thanks for Submiting. Bye!!");
+}
+
+
+
+
+    </script>
+
+</head>
+
+<body align="center">
+    <!-- title with id="title" in H1 sized text.-->
+        <h1 id="title">
+        
+            Survey form
+
+        </h1>
+    <!--short explanation with id="description" in P sized text.-->
+        <p id="description">
+            
+            
+            Hi ! I'm Bhavanesh . You are viewing my project 
+            on Responsive Web Design in freecodecamp.org .
+            This contains a Sample Survey Form designed 
+            with HTML,CSS & JavaScript.Hope you have a good 
+            day.
+            
+
+        </p>
+        <!-- form with id="survey-form".-->
+        <form action="" id="survey-form" name="surveyform" >
+            <!--Label with id="name-label" & input text with id="name"-->
+            <div class="AAA">
+               <div class="AA1"> <label for="name" id="name-label">Name:</label> </div>
+               <div class="AA2"> <input type="text" id="name" name="name" placeholder="Ex: jhon,alex.." required></div>
+            </div>
+            <!--Label with id="email-label" & input email with id="email"-->
+            <div class="AAA">
+                <div class="AA1">  <label for="email" id="email-label"> Email :</label> </div>
+                <div class="AA2">  <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br></div>
+            </div>
+            <!--Label with id="number-label" & input number of range 1 to 50 with id="number"--->
+            <div class="AAA">
+                <div class="AA1"><label for="number" id="number-label"> Age :</label>  </div>
+                <div class="AA2"><input type="number" id="number" name="number" min="1" max="50" placeholder="19" onsubmit="return muFunction()" required><br> </div>
+            </div>
+            <!--Label with id="country" & select menu with different countries-->
+            <div class="AAA">
+                <div class="AA1"><label for="country" id="country">Country:</label></div>
+                <div class="AA2">
+                    <select id="dropdown" name="name">
+                        <option value="volvo">India</option>
+                        <option value="saab">USA</option>
+                        <option value="fiat">UK</option>
+                        <option value="audi">China</option>
+                    </select>
+                </div>
+            </div>
+            <!--Label with id="gender" & radio buttons for describing genders-->
+            <div class="AAA">
+                <div class="AA1"><label for="gender" id="gender">Gender :</label></div>
+                <div class="AA2">  
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <!--Label using id="hobbies" & checkboxes to describe hobbies-->
+            <div class="AAA">
+                <div class="AA1"><label for="hobbies" id="hobbies">Hobbies :</label></div>
+                <div class="AA2">
+                    <input type="checkbox" id="music" name="hobbies" value="Music">
+                    <label for="music"> Music</label><br>
+                    <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                    <label for="travel"> Travel</label><br>
+                    <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                    <label for="sports"> Sports</label>
+                </div>
+            </div>
+            <!--Label with id="comment" & textarea to leave comments-->   
+            <div class="AAA">
+                <div class="AA1"><label for="comment" id="comment"> Comments :</label></div> 
+                <div class="AA2">
+
+                    <textarea id="text" rows="4" cols="20">
+
+                    </textarea>
+                </div>
+            </div>
+            <!--Submit button to submit the form with id="submit"-->
+            <button type="submit" form="survey-form" value="Submit" id="submit" onclick="return buttonSubmit()">Submit</button>
+
+
+
+        </form>
+
+
+</body>
+</html>

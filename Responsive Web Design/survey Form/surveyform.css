@@ -1,0 +1,66 @@
+body{
+   margin: 0px;
+   width: 100%;
+   
+   
+}
+
+
+#title {
+    font-family: cursive;
+    font-size: 40px;
+    
+}
+#description {
+    font-family: sans-serif;
+    word-spacing: 3px;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: lightsteelblue;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#name-label , #email-label , #number-label , #country , #gender , #hobbies , #comment{
+    font-size: 18px;
+    letter-spacing: 2px;
+   
+    
+    
+}
+
+#name , #email , #number , #dropdown {
+    border-radius: 2px;
+   
+    
+   
+
+}
+
+.AAA {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+.AA1 , .AA2{
+    width: 50%;
+    
+}
+
+
+#male , #female , #other , #music , #travel , #sports , #text{
+    
+}
+
+#submit{
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
